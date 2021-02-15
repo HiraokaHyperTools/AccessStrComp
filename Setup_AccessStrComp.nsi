@@ -44,9 +44,9 @@ Section "" ;No components page, name is not important
   SetOutPath $INSTDIR
   
   ; Put file there
-  File "Checker.mdb"
-  
-  ExecShell "open" '$INSTDIR\Checker.mdb'
+  File "Checker.accdb"
+
+  ExecShell "open" '$INSTDIR\Checker.accdb'
   
   IfErrors +2
     SetAutoClose true
